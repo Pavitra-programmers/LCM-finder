@@ -1,7 +1,8 @@
 ## LCM Explorer (3 Levels)
 
 A kid-friendly game to discover the Least Common Multiple using animated multiple strips, rewards, and confetti. Built with React + TypeScript + Vite.
-Hosted Site Link (usually `https://findthelcm.free.nf/`).
+
+this is the site links: [https://findthelcm.free.nf/](https://findthelcm.free.nf/)
 ### Run locally
 
 ```bash
