@@ -1,0 +1,39 @@
+#root { max-width: 960px; margin: 0 auto; padding: 24px; color: #000000; }
+.app { display: flex; flex-direction: column; gap: 16px; }
+
+.title { font-size: 40px; text-align: center; margin: 16px 0; color: #000000; }
+.levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.level-btn { background: #fff; border: 2px solid #222; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 8px; align-items: center; font-weight: 700; color: #000000; }
+.level-btn.locked { opacity: 0.5; }
+.level-btn.current { outline: 3px dashed #6c5ce7; }
+
+.screen { display: flex; flex-direction: column; gap: 12px; }
+.header { display: flex; align-items: center; justify-content: space-between; color: #000000; }
+
+.numbers-row { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 8px 0; }
+.big-number { background: #fff; border: 3px solid #222; border-radius: 12px; padding: 8px 16px; font-size: 28px; font-weight: 900; min-width: 80px; text-align: center; color: #000000; }
+.and { font-weight: 800; color: #000000; }
+
+.game-board { display: flex; flex-direction: column; gap: 12px; }
+.multiples-area.two-rows { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+.number-strip { background: #f8f9ff; border: 2px solid #222; border-radius: 14px; padding: 10px; color: #000000; }
+.strip-header { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; }
+.chip { background: #ffeaa7; border: 1px solid #222; border-radius: 999px; padding: 2px 10px; font-weight: 700; color: #000000; }
+.base { color: #000000; font-weight: 600; }
+.strip-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.tile { background: #fff; border: 2px solid #222; border-radius: 10px; padding: 10px 12px; font-size: 18px; font-weight: 800; text-align: center; color: #000000; }
+.tile.selected { outline: 3px solid #6c5ce7; }
+.tile.highlight { background: #c8f7c5; box-shadow: 0 0 0 3px #2ecc71 inset; }
+
+.result-box { display: flex; justify-content: center; min-height: 40px; }
+.result-pill { background: #dff9fb; border: 2px solid #222; border-radius: 999px; padding: 8px 16px; font-weight: 800; color: #000000; }
+
+.primary { background: #55efc4; border: 2px solid #222; border-radius: 12px; padding: 8px 14px; font-weight: 800; color: #000000; }
+.primary:disabled { opacity: 0.5; }
+.secondary { background: #fff; border: 2px solid #222; border-radius: 12px; padding: 8px 14px; font-weight: 800; color: #000000; }
+
+.reward-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; }
+.reward-card { background: #fff; border: 3px solid #222; border-radius: 16px; padding: 24px; width: 320px; text-align: center; }
+.stars { font-size: 28px; margin: 10px 0 16px; }
+.star.filled { filter: drop-shadow(0 0 6px gold); }
